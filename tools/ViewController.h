@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MessageUI;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController<MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
+
+- (IBAction)sendEmail:(id)sender;
+- (IBAction)sendText:(id)sender;
 
 @end
